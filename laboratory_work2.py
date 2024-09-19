@@ -24,16 +24,27 @@
 # describe_person('one')
 
 
-print('Число:')
 def is_prime(number):
     if number <= 1:
-        print('Число не является простым')
-        return
+        return 0
     for i in range(2, int(number**0.5)+1):
         if number%i == 0:
-            print('Число не является простым')
-            return
-    print('Число простое')
-is_prime(int(input()))
+            return 1
+
+def prime(number):
+    a = []
+    for i in range(0, number+1):
+        a.append(i)
+    for i in a:
+        if is_prime(i):
+            for j in range(i, len(a), i):
+                a[j] = 0
+    a = a[2:]
+    a = set(a)
+    a.remove(0)
+    print(a)
+
+prime(50)
+
 
 
