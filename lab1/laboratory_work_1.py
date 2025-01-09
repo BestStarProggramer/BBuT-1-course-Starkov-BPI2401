@@ -1,4 +1,4 @@
-
+# 11111
 number = int(input("Введите число: "))
 
 
@@ -7,3 +7,10 @@ if number > 0:
         print(i)
 else:
     print("Введите положительное число.")
+
+
+####2
+a = int(input())
+b = int(input())
+if (a>b): print(a)
+else: print(b)
