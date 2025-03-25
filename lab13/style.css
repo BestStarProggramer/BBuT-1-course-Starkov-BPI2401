@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #39285c;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+main {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  scroll-margin-top: 8rem; /* костыль */
+}
+
+.projects-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 1;
+  min-width: 25rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-card img {
+  height: 10rem;
+  border-radius: 4px;
+  transition: transform 0.3s;
+  width: 100%;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.skills-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hard-skills,
+.soft-skills {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  background: #39285c;
+  color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+li {
+  list-style: none;
+  margin-left: 1rem;
+}
