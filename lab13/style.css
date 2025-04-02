@@ -66,7 +66,6 @@ section {
 
 .project-card img {
   height: 10rem;
-  border-radius: 4px;
   transition: transform 0.3s;
   width: 100%;
 }
